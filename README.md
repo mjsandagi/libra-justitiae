@@ -72,6 +72,16 @@ The output of the model includes:
 -   **Predicted Amount to Fine**: The expected amount to be fined (in pounds sterling).
 -   **Statistically Preferred Punishment**: The punishment type that is statistically more likely for a given criminal conviction.
 
+##### Example Output
+
+```JSON
+"Prediction": {
+        "Predicted Sentence to be Served: ": 5.553350746631623,
+        "Predicted Amount to Fine: ": 238541.1928635538,
+        "Statistically Preferred Punishment": "Fine"
+    }
+```
+
 ## Credits:
 
 -   [@mjsandagi](https://github.com/mjsandagi)
