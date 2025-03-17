@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Libra Justitiae</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <script defer src="./js/app.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <h1 id="main-heading">Libra Justitiae</h1>
+            </header>
+        </div>
+        <div class="container division">
+            <h2 class="form-heading">The Scales of Justice</h2>
+            <form id="criminalForm" class="form">
+                <div class="form-group">
+                    <label for="name">Criminal Name:</label>
+                    <input
+                        class="user-input"
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name of criminal"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="conviction">Main Conviction:</label>
+                    <input
+                        type="text"
+                        id="conviction"
+                        class="user-input"
+                        name="conviction"
+                        placeholder="Sentencing conviction"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="totalConvictions"
+                        >Total Number of Convictions:</label
+                    >
+                    <input
+                        type="number"
+                        id="totalConvictions"
+                        class="user-input"
+                        name="totalConvictions"
+                        placeholder="Total number of past convictions"
+                        required
+                    />
+                </div>
+                <button type="submit" class="btn-submit">
+                    Predict Sentence
+                </button>
+            </form>
+            <h3>Predicted Sentence:</h3>
+            <p id="result" class="result-text"></p>
+        </div>
+    </body>
+</html>
