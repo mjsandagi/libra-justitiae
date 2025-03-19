@@ -36,8 +36,8 @@ Machine learning is used to predict the type of prosecution for criminals based 
 The model is a **feedforward neural network**, which consists of the following layers:
 
 -   **Input Layer**: Accepts two input features, namely:
-    -   **Main Source of Conviction** (numerically encoded).
-    -   **Past Convictions** (scaled to a range of 0 to 1).
+    -   **Main Source of Conviction** (a phrase).
+    -   **Past Convictions** (a numerical value).
 -   **Hidden Layers**: The network has two hidden layers with **32** and **24** neurons, respectively, each using **ReLU** (Rectified Linear Unit) and **ELU** (Exponential Linear Unit) activation functions.
 -   **Output Layer**: A single neuron that outputs the predicted value, either for the **sentences served** or the **amount fined**. These outputs are continuous values.
 
