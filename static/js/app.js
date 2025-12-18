@@ -14,7 +14,7 @@ var lastRequest = {
 };
 
 async function predictSentence(name, conviction, totalNumOfConvictions) {
-    const response = await fetch("http://localhost:5000/process", {
+    const response = await fetch("/process", {
         method: "POST",
         mode: "cors",
         headers: {
