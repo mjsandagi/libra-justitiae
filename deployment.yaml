@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: libra-deployment
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: libra-app
+    template:
+        metadata:
+            labels:
+                app: libra-app
+        spec:
+            containers:
+                - name: libra-container
+                  image: libra-local:v1 # This matches the tag we will build
+                  imagePullPolicy: Never # IMPORTANT: Forces K8s to use local image
+                  ports:
+                      - containerPort: 5000
